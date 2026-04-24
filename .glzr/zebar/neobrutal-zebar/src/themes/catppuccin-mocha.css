@@ -1,0 +1,30 @@
+/* Catppuccin Macchiato color palette */
+
+:root {
+  --ctp-macchiato-rosewater: 10 57.692% 89.804%;
+  --ctp-macchiato-flamingo: 0 58.333% 85.882%;
+  --ctp-macchiato-pink: 316.071 73.684% 85.098%;
+  --ctp-macchiato-mauve: 266.512 82.692% 79.608%;
+  --ctp-macchiato-red: 351.176 73.913% 72.941%;
+  --ctp-macchiato-maroon: 355.059 71.429% 76.667%;
+  --ctp-macchiato-peach: 21.356 85.507% 72.941%;
+  --ctp-macchiato-yellow: 40.253 69.912% 77.843%;
+  --ctp-macchiato-green: 105.217 48.252% 71.961%;
+  --ctp-macchiato-teal: 171.081 46.835% 69.02%;
+  --ctp-macchiato-sky: 188.78 59.42% 72.941%;
+  --ctp-macchiato-sapphire: 198.641 65.605% 69.216%;
+  --ctp-macchiato-blue: 220.189 82.813% 74.902%;
+  --ctp-macchiato-lavender: 234.462 82.278% 84.51%;
+  --ctp-macchiato-text: 227.442 68.254% 87.647%;
+  --ctp-macchiato-subtext1: 228 39.216% 80%;
+  --ctp-macchiato-subtext0: 227.368 26.761% 72.157%;
+  --ctp-macchiato-overlay2: 228.333 20% 64.706%;
+  --ctp-macchiato-overlay1: 227.647 15.455% 56.863%;
+  --ctp-macchiato-overlay0: 230.323 12.351% 49.216%;
+  --ctp-macchiato-surface2: 229.655 13.744% 41.373%;
+  --ctp-macchiato-surface1: 231.111 15.607% 33.922%;
+  --ctp-macchiato-surface0: 230.4 18.797% 26.078%;
+  --ctp-macchiato-base: 231.818 23.404% 18.431%;
+  --ctp-macchiato-mantle: 233.333 23.077% 15.294%;
+  --ctp-macchiato-crust: 235.714 22.581% 12.157%;
+}

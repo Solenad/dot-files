@@ -1,0 +1,152 @@
+{
+  "$schema": "https://raw.githubusercontent.com/code-yeongyu/oh-my-openagent/dev/assets/oh-my-opencode.schema.json",
+  "agents": {
+    "sisyphus": {
+      "model": "nvidia/moonshotai/kimi-k2.5",
+      "fallback_models": [
+        { "model": "nvidia/nvidia/llama-3.3-nemotron-super-49b-v1.5" },
+        { "model": "nvidia/deepseek-ai/deepseek-v3.2" },
+        { "model": "nvidia/meta/llama-3.3-70b-instruct" }
+      ]
+    },
+    "hephaestus": {
+      "model": "nvidia/deepseek-ai/deepseek-v3.2",
+      "fallback_models": [
+        { "model": "nvidia/nvidia/llama-3.3-nemotron-super-49b-v1.5" },
+        { "model": "nvidia/meta/llama-3.3-70b-instruct" },
+        { "model": "github-copilot/gpt-5.3-codex" }
+      ]
+    },
+    "oracle": {
+      "model": "nvidia/nvidia/llama-3.3-nemotron-super-49b-v1.5",
+      "fallback_models": [
+        { "model": "nvidia/meta/llama-3.3-70b-instruct" },
+        { "model": "nvidia/deepseek-ai/deepseek-v3.2" },
+        { "model": "nvidia/mistralai/mistral-large-2-instruct" }
+      ]
+    },
+    "explore": {
+      "model": "nvidia/minimaxai/minimax-m2.5",
+      "fallback_models": [
+        { "model": "nvidia/google/gemma-3-12b-it" },
+        { "model": "nvidia/meta/llama-3.2-1b-instruct" },
+        { "model": "github-copilot/claude-haiku-4.5" }
+      ]
+    },
+    "multimodal-looker": {
+      "model": "nvidia/meta/llama-3.2-11b-vision-instruct",
+      "fallback_models": [
+        { "model": "nvidia/google/gemma-3-12b-it" },
+        { "model": "nvidia/google/gemma-3-27b-it" },
+        { "model": "github-copilot/gpt-4o" }
+      ]
+    },
+    "prometheus": {
+      "model": "nvidia/meta/llama-3.3-70b-instruct",
+      "fallback_models": [
+        { "model": "nvidia/nvidia/llama-3.3-nemotron-super-49b-v1.5" },
+        { "model": "nvidia/deepseek-ai/deepseek-v3.2" },
+        { "model": "nvidia/moonshotai/kimi-k2-instruct" }
+      ]
+    },
+    "metis": {
+      "model": "nvidia/nvidia/llama-3.3-nemotron-super-49b-v1.5",
+      "fallback_models": [
+        { "model": "nvidia/meta/llama-3.3-70b-instruct" },
+        { "model": "nvidia/deepseek-ai/deepseek-v3.2" },
+        { "model": "nvidia/moonshotai/kimi-k2-instruct" }
+      ]
+    },
+    "momus": {
+      "model": "nvidia/nvidia/llama-3.3-nemotron-super-49b-v1.5",
+      "fallback_models": [
+        { "model": "nvidia/meta/llama-3.3-70b-instruct" },
+        { "model": "nvidia/deepseek-ai/deepseek-v3.2" },
+        { "model": "nvidia/mistralai/mistral-large-2-instruct" },
+        { "model": "nvidia/qwen/qwen3.5-397b-a17b" }
+      ]
+    },
+    "atlas": {
+      "model": "nvidia/nvidia/llama-3.3-nemotron-super-49b-v1.5",
+      "fallback_models": [
+        { "model": "nvidia/meta/llama-3.3-70b-instruct" },
+        { "model": "nvidia/deepseek-ai/deepseek-v3.2" },
+        { "model": "nvidia/mistralai/mistral-large-2-instruct" }
+      ]
+    },
+    "sisyphus-junior": {
+      "model": "nvidia/qwen/qwen2.5-coder-32b-instruct",
+      "fallback_models": [
+        { "model": "nvidia/deepseek-ai/deepseek-coder-6.7b-instruct" },
+        { "model": "nvidia/nvidia/llama-3.1-nemotron-51b-instruct" },
+        { "model": "github-copilot/gpt-5.2-codex" }
+      ]
+    }
+  },
+  "categories": {
+    "visual-engineering": {
+      "model": "nvidia/google/gemma-3-12b-it",
+      "fallback_models": [
+        { "model": "nvidia/meta/llama-3.2-11b-vision-instruct" },
+        { "model": "nvidia/google/gemma-3-27b-it" },
+        { "model": "nvidia/moonshotai/kimi-k2-instruct" }
+      ]
+    },
+    "ultrabrain": {
+      "model": "nvidia/nvidia/llama-3.3-nemotron-super-49b-v1.5",
+      "fallback_models": [
+        { "model": "nvidia/meta/llama-3.3-70b-instruct" },
+        { "model": "nvidia/deepseek-ai/deepseek-v3.2" },
+        { "model": "nvidia/meta/llama-4-maverick-17b-128e-instruct" }
+      ]
+    },
+    "deep": {
+      "model": "nvidia/deepseek-ai/deepseek-v3.2",
+      "fallback_models": [
+        { "model": "nvidia/nvidia/llama-3.3-nemotron-super-49b-v1.5" },
+        { "model": "nvidia/meta/llama-3.3-70b-instruct" },
+        { "model": "nvidia/moonshotai/kimi-k2-instruct" }
+      ]
+    },
+    "artistry": {
+      "model": "nvidia/google/gemma-3-27b-it",
+      "fallback_models": [
+        { "model": "nvidia/meta/llama-4-maverick-17b-128e-instruct" },
+        { "model": "nvidia/mistralai/mistral-large-2-instruct" },
+        { "model": "nvidia/meta/llama-3.3-70b-instruct" }
+      ]
+    },
+    "quick": {
+      "model": "nvidia/minimaxai/minimax-m2.1",
+      "fallback_models": [
+        { "model": "nvidia/minimaxai/minimax-m2.5" },
+        { "model": "nvidia/google/gemma-3-1b-it" },
+        { "model": "nvidia/meta/llama-3.2-1b-instruct" },
+        { "model": "github-copilot/claude-haiku-4.5" }
+      ]
+    },
+    "unspecified-low": {
+      "model": "nvidia/minimaxai/minimax-m2.5",
+      "fallback_models": [
+        { "model": "nvidia/google/gemma-3-12b-it" },
+        { "model": "nvidia/qwen/qwq-32b" },
+        { "model": "nvidia/meta/llama-3.2-11b-vision-instruct" }
+      ]
+    },
+    "unspecified-high": {
+      "model": "nvidia/meta/llama-3.3-70b-instruct",
+      "fallback_models": [
+        { "model": "nvidia/nvidia/llama-3.3-nemotron-super-49b-v1.5" },
+        { "model": "nvidia/deepseek-ai/deepseek-v3.2" },
+        { "model": "nvidia/mistralai/mistral-large-2-instruct" }
+      ]
+    },
+    "writing": {
+      "model": "nvidia/google/gemma-3-12b-it",
+      "fallback_models": [
+        { "model": "nvidia/meta/llama-3.3-70b-instruct" },
+        { "model": "nvidia/minimaxai/minimax-m2.5" }
+      ]
+    }
+  }
+}

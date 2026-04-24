@@ -1,0 +1,91 @@
+{
+  "preset": "kimi-optimized",
+  "presets": {
+    "kimi-optimized": {
+      "orchestrator": {
+        "model": "nvidia/moonshotai/kimi-k2.5",
+        "variant": "high",
+        "skills": ["*"],
+        "mcps": ["*"],
+        "fallback_models": [
+          { "model": "nvidia/nvidia/llama-3.3-nemotron-super-49b-v1.5" },
+          { "model": "nvidia/deepseek-ai/deepseek-v3.2" },
+          { "model": "nvidia/meta/llama-3.3-70b-instruct" }
+        ]
+      },
+      "oracle": {
+        "model": ""nvidia/moonshotai/kimi-k2-thinking",
+        "variant": "high",
+        "skills": [],
+        "mcps": [],
+        "fallback_models": [
+          { "model": "nvidia/meta/llama-3.3-70b-instruct" },
+          { "model": "nvidia/deepseek-ai/deepseek-v3.2" },
+          { "model": "nvidia/mistralai/mistral-large-2-instruct" }
+        ]
+      },
+      "librarian": {
+        "model": "nvidia/nvidia/llama-3.3-nemotron-super-49b-v1.5",
+        "variant": "low",
+        "skills": [],
+        "mcps": ["websearch", "context7", "grep_app"],
+        "fallback_models": [
+          { "model": "nvidia/meta/llama-3.3-70b-instruct" },
+          { "model": "nvidia/deepseek-ai/deepseek-v3.2" },
+          { "model": "nvidia/mistralai/mistral-large-2-instruct" }
+        ]
+      },
+      "explorer": {
+        "model": "nvidia/minimaxai/minimax-m2.5",
+        "variant": "low",
+        "skills": [],
+        "mcps": [],
+        "fallback_models": [
+          { "model": "nvidia/google/gemma-3-12b-it" },
+          { "model": "nvidia/meta/llama-3.2-1b-instruct" },
+          { "model": "github-copilot/claude-haiku-4.5" }
+        ]
+      },
+      "designer": {
+        "model": "nvidia/google/gemma-3-27b-it",
+        "variant": "medium",
+        "skills": ["agent-browser"],
+        "mcps": [],
+        "fallback_models": [
+          { "model": "nvidia/meta/llama-4-maverick-17b-128e-instruct" },
+          { "model": "nvidia/mistralai/mistral-large-2-instruct" },
+          { "model": "nvidia/meta/llama-3.3-70b-instruct" }
+        ]
+      },
+      "fixer": {
+        "model": "nvidia/qwen/qwen2.5-coder-32b-instruct",
+        "variant": "low",
+        "skills": [],
+        "mcps": [],
+        "fallback_models": [
+          { "model": "nvidia/deepseek-ai/deepseek-coder-6.7b-instruct" },
+          { "model": "nvidia/nvidia/llama-3.1-nemotron-51b-instruct" },
+          { "model": "github-copilot/gpt-5.2-codex" }
+        ]
+      }
+    }
+  },
+  "council": {
+    "master": { "model": "nvidia/moonshotai/kimi-k2-thinking" },
+    "default_preset": "default",
+    "presets": {
+      "default": {
+        "alpha": { "model": "nvidia/moonshotai/kimi-k2-thinking" },
+        "beta":  { "model": "nvidia/llama-3.3-nemotron-super-49b-v1.5" },
+        "gamma": { "model": "nvidia/deepseek-ai/deepseek-v3.2" }
+      }
+    },
+    "master_timeout": 300000,
+    "councillors_timeout": 180000
+  },
+  "multiplexer": {
+    "type": "zellij",
+    "layout": "main-vertical",
+    "main_pane_size": 60
+  }
+}

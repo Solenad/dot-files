@@ -1,0 +1,45 @@
+:root {
+  /* sizes */
+  --height: 2.5rem;
+  --bar-margin-y: 0.625rem;
+  --bar-margin-x: 1.25rem;
+
+  /* fonts */
+  --font-family: "JetBrains Mono", monospace;
+  --font-size: 12px;
+  --font-weight: 500;
+
+  /* border */
+  --border-size: 0.125rem;
+  --radius: 0.25rem;
+
+  /* shadow */
+  --shadow-size-bar: 0.25rem;
+  --shadow-size-button: 0.125rem;
+
+  /* colors */
+  --text: var(--ctp-macchiato-text);
+  --bg: var(--ctp-macchiato-surface0);
+  --border: var(--ctp-macchiato-surface0);
+  --shadow: var(--ctp-macchiato-surface0);
+  --icon: var(--ctp-macchiato-red);
+  --memory: var(--ctp-macchiato-sky);
+  --cpu: var(--ctp-macchiato-pink);
+  --cpu-high-usage: var(--ctp-macchiato-red);
+  --battery-good: var(--ctp-macchiato-green);
+  --battery-mid: var(--ctp-macchiato-yellow);
+  --battery-low: var(--ctp-macchiato-red);
+  --focused-process: var(--ctp-macchiato-text);
+  --process: var(--ctp-macchiato-subtext0);
+  --displayed: var(--ctp-macchiato-text);
+  --ws-1: var(--ctp-macchiato-yellow);
+  --ws-2: var(--ctp-macchiato-red);
+  --ws-3: var(--ctp-macchiato-green);
+  --ws-4: var(--ctp-macchiato-sky);
+  --ws-5: var(--ctp-macchiato-sky);
+  --tiling-direction: var(--ctp-macchiato-pink);
+  --not-playing: var(--ctp-macchiato-red);
+  --now-playing: var(--ctp-macchiato-green);
+  --network: var(--ctp-macchiato-text);
+  --weather: var(--ctp-macchiato-text);
+}
