@@ -1,0 +1,85 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+  "logo": {
+    "source": "~/.config/fastfetch/ascii/head.gif",
+    "type": "iterm",
+    "height": 20,
+    "width": 45,
+  },
+  "display": {
+    "separator": " ",
+    "key": {
+      "width": 15,
+    },
+  },
+  "modules": [
+    "break",
+    "break",
+    "break",
+
+    {
+      "type": "os",
+      "key": "󰖳  distro",
+      "keyColor": "yellow",
+      "format": "{name}",
+    },
+    {
+      "type": "kernel",
+      "key": "  kernel",
+      "keyColor": "green",
+    },
+    {
+      "type": "shell",
+      "key": "  shell",
+      "keyColor": "blue",
+      "format": "{pretty-name}",
+    },
+    {
+      "type": "wm",
+      "key": "󰘳  wm",
+      "keyColor": "red",
+      "format": "{pretty-name}",
+    },
+    {
+      "type": "uptime",
+      "key": "󱎫  uptime",
+      "keyColor": "magenta",
+    },
+
+    {
+      "type": "localip",
+      "key": "󰩟  local",
+      "keyColor": "magenta",
+      "compact": true,
+      "format": "{pretty-name}",
+    },
+    {
+      "type": "cpu",
+      "key": "󰍛  cpu",
+      "keyColor": "red",
+      "format": "{name}",
+    },
+    {
+      "type": "memory",
+      "key": "󰘚  memory",
+      "keyColor": "yellow",
+      "format": "{used} / {total}",
+    },
+    {
+      "type": "disk",
+      "key": "󰉉  disk",
+      "keyColor": "cyan",
+      "folders": ["/"],
+      "format": "{size-used} / {size-total}",
+    },
+    "break",
+    {
+      "type": "media",
+      "key": "󰝚  media",
+      "keyColor": "magenta",
+    },
+    "break",
+    { "type": "colors", "symbol": "circle" },
+    { "type": "custom" },
+  ],
+}
