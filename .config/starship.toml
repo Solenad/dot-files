@@ -1,0 +1,18 @@
+# Speed optimizations: disable modules that spawn subprocesses on every prompt render.
+# Each of these starts an external tool (python, docker, rustc, ...) per prompt.
+python = { disabled = true }
+rust = { disabled = true }
+golang = { disabled = true }
+java = { disabled = true }
+dotnet = { disabled = true }
+docker_context = { disabled = true }
+aws = { disabled = true }
+gcloud = { disabled = true }
+azure = { disabled = true }
+package = { disabled = true }
+lua = { disabled = true }
+elixir = { disabled = true }
+ruby = { disabled = true }
+php = { disabled = true }
+kotlin = { disabled = true }
+swift = { disabled = true }
