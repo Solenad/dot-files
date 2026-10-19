@@ -1,0 +1,14 @@
+name: dockerization
+version: 1.0.0
+type: skill
+main: SKILL.md
+description: Initiates dockerfile and docker-compose
+tags: [docker, containerization, deployment]
+enabled: true
+# Plugin registration if needed
+plugins:
+  - opencode-plugin-openspec
+# Execution entry point if needed
+execute:
+  agent: openspec
+  tool: dockerization

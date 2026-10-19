@@ -1,0 +1,18 @@
+# Ignore everything by default — only track dotfiles from the dot-files repo
+*
+
+# Un-ignore this gitignore
+!.gitignore
+
+# Un-ignore dotfile directories that exist in both the dot-files repo and this dir
+!.config/
+!.config/lazygit/
+!.config/lazygit/**
+!.config/nvim/
+!.config/nvim/**
+!.config/opencode/
+!.config/opencode/**
+!.config/openspec/
+!.config/openspec/**
+!.glzr/
+!.glzr/**
